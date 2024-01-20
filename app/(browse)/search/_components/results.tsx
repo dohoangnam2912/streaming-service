@@ -11,7 +11,7 @@ export const Results = async ({term}: ResultsProps) => {
     return (
         <div className="h-full p-8 max-w-screen-2xl mx-auto">
             <h2 className="text-lg font-semibold mb-4">
-              Results for term "{term}"
+              Results for term &quot;{term}&quot;
             </h2>
             {data.length === 0 && (
                 <div className="text-muted-foreground text-sm">

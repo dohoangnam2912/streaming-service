@@ -22,7 +22,7 @@ export const Logo = () => {
                         ET-E9 HUB
                     </p>
                     <p className="text-xs text-muted-foreground">
-                        Let's play
+                        Let&apos;s play
                     </p>
                 </div>
             </div>
