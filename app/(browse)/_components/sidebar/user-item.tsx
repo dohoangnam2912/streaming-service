@@ -23,7 +23,7 @@ export const UserItem = ({username, imageUrl, isLive} : UserItemProps) => {
 
     const href = `/${username}`;
     const isActive = pathname === href;
-
+    console.log("User-item", isLive);
     return (
         <Button
             asChild

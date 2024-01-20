@@ -45,7 +45,7 @@ export const InfoCard = ({name,thumbnailUrl,hostIdentity,viewerIdentity,}: InfoC
                         </h3>
                         {thumbnailUrl && (
                             <div className="relative aspect-video rounded-md overflow-hidden w-[200px] border-white/10">
-                                <Image fill src={thumbnailUrl} alt={name}/>
+                                <Image fill src={thumbnailUrl} alt={name} className="object-cover"/>
                             </div>
                         )}
                     </div>

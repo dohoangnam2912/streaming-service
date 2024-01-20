@@ -18,7 +18,7 @@ export const Search = () => {
         //find bar
         const url = qs.stringifyUrl({
             url: "/search",
-            query: {term: value},
+            query: {term: value}, //The logic add input to our URL
         }, {skipEmptyString: true})
 
         router.push(url); //push router

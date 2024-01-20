@@ -8,16 +8,17 @@ export const useViewerToken = (hostIdentity: string) => {
     const [token, setToken] = useState("");
     const [name, setName] = useState("");
     const [identity, setIdentity] = useState("");
-
+    console.log(name);
     useEffect(() => {
         const createToken = async () => {
             try {
                 const viewerToken = await createViewerToken(hostIdentity);
                 setToken(viewerToken);
 
-                const decodedToken = jwtDecode(viewerToken) as JwtPayload & {name?: string}; // reread as and &
+                const decodedToken = jwtDecode(viewerToken) as JwtPayload & {name: string}; // reread as and &
 
                 const name = decodedToken?.name;
+                console.log(name);
                 const identity = decodedToken.jti; //jti
 
                 if (identity){
@@ -37,6 +38,6 @@ export const useViewerToken = (hostIdentity: string) => {
     }, [hostIdentity]);
 
     return {
-        token, name, identity
+        name, token, identity
     }
 }

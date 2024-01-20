@@ -22,6 +22,7 @@ export const updateStream = async (value: Partial<Stream>) => {
         }
 
         const validData = {
+            thumbnailUrl: value.thumbnailUrl,
             name: value.name,
             isChatEnabled: value.isChatEnabled,
             isChatFollowersOnly: value.isChatFollowersOnly,

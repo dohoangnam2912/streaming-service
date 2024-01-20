@@ -20,7 +20,7 @@ export const Logo = () => {
                     className={cn
                     (font.className, "hidden lg:block")}>
                     <p className="text-lg font-semibold">
-                        Gamehub
+                        ET-E9 HUB
                     </p>
                     <p className="text-xs text-muted-foreground"> 
                         Creator dashboard

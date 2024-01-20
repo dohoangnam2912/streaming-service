@@ -16,7 +16,7 @@ export async function POST(req: Request) {//this fetch api interface represents 
     const authorization = headerPayload.get("Authorization"); //Check if the header or the header payload is authorized
 
     if (!authorization) {
-        return new Response ("No authorization header", {status: 400});
+        return new Response("No authorization header", {status: 400});
     }
 
     const event = receiver.receive(body, authorization); //receiver : WebhookReceiver
@@ -45,3 +45,4 @@ export async function POST(req: Request) {//this fetch api interface represents 
 
 
 }
+

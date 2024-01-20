@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    // add domain
+    images: {
+        domains: [
+            "utfs.io",
+        ]
+    },
     webpack: (config) => {
         config.module.rules.push({
             test: /\.mjs$/,
