@@ -10,7 +10,7 @@ export const Actions = async () => {
             <Button size="sm" variant="ghost" className="text-muted-foreground hover:text-primary" asChild>
                 <Link href="/">
                     <LogOut className="h-5 w-5 mr-2"/>
-                    Exit
+                    出る
                 </Link>
             </Button>
             <UserButton

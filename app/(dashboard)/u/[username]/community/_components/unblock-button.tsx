@@ -24,7 +24,7 @@ export const UnblockButton = ({
 
     return (
         <Button disabled={isPending} onClick={onClick} variant="link" size="sm" className="text-blue-500 w-full">
-            Unblock
+            ブロック解除
         </Button>
     )
 }

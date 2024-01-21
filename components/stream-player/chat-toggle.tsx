@@ -19,7 +19,7 @@ export const ChatToggle = () => {
         }
     }
 
-    const label = collapsed ? "Open chat" : "Close chat";
+    const label = collapsed ? "チャットを展開" : "チャットを折りたたむ";
 
     return (
         <Hint label={label} side="left" asChild>

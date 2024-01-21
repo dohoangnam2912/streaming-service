@@ -41,7 +41,7 @@ export const ChatCommunity = ({hostName, viewerName,isHidden}: ChatCommunityProp
         return (
             <div className="flex flex-1 items-center justify-center">
                 <p className="text-sm text-muted-foreground">
-                    Community is disabled
+                コミュニティが無効しています
                 </p>
             </div>
         )
@@ -52,7 +52,7 @@ export const ChatCommunity = ({hostName, viewerName,isHidden}: ChatCommunityProp
             <Input onChange={(e) => onChange(e.target.value)} placeholder="Search community" className=""/>
             <ScrollArea className="gap-y-2 mt-4">
                 <p className="text-center text-sm text-muted-foreground hidden last:block p-2">
-                    No results
+                結果がありません
                 </p>
                 {filteredParticipants.map((participant) => (
                     <CommunityItem key={participant.identity} hostName={hostName} viewerName={viewerName} participantName={participant.name} participantIdentity={participant.identity}/>

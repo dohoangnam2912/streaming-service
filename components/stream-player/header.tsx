@@ -50,7 +50,7 @@ export const Header = ({imageUrl,hostIdentity,hostName,viewerIdentity,isFollowin
                         </div>
                     ) : (
                         <p className="font-semibold text-xs">
-                            Offline
+                            オフライン
                         </p>
                     )}
                 </div>

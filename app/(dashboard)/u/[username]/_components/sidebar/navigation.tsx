@@ -11,22 +11,22 @@ export const Navigation = () => {
 
     const routes = [
         {
-            label: "Stream",
+            label: "ストリーム",
             href: `/u/${user?.username}`,
             icon: Fullscreen,
         },
         {
-            label: "Keys",
+            label: "キー",
             href: `/u/${user?.username}/keys`,
             icon: KeyRound,
         },
         {
-            label: "Chat",
+            label: "チャット",
             href: `/u/${user?.username}/chat`,
             icon: MessageSquare,
         },
         {
-            label: "Community",
+            label: "コミュニティ",
             href: `/u/${user?.username}/community`,
             icon: Users,
         },

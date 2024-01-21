@@ -14,7 +14,7 @@ export const ChatList = ({messages, isHidden}: ChatListProps) => {
         return (
             <div className="flex flex-1 items-center justify-center">
                 <p className="text-sm text-muted-foreground">
-                    {isHidden ? "Chat is disabled" : "Welcome to the chat"}
+                    {isHidden ? "チャットが無効になっています" : "チャットへようこそ"}
                 </p>
             </div>
         )

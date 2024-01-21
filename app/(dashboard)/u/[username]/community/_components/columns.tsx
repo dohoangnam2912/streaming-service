@@ -21,7 +21,7 @@ export const columns: ColumnDef<BlockedUser>[] = [
     accessorKey: "username",
     header: ({column}) => (
       <Button variant="ghost" onClick={() => column.getIsSorted() === "asc"}>
-        Username
+        ユーザー名
         <ArrowUpDown className="ml-2 h-4 w-4"/>
       </Button>
     ),
@@ -36,7 +36,7 @@ export const columns: ColumnDef<BlockedUser>[] = [
     accessorKey: "createdAt",
     header: ({column}) => (
       <Button variant="ghost" onClick={() => column.getIsSorted() === "asc"}>
-        Date blocked
+        ブロックされた日付
         <ArrowUpDown className="ml-2 h-4 w-4"/>
       </Button>
     ),

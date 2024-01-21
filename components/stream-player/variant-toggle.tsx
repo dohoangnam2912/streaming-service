@@ -20,7 +20,7 @@ export const VariantToggle = () => {
     }
     
 
-    const label = isChat ? "Community" : "Go back to chat";
+    const label = isChat ? "コミュニティ" : "チャットに戻る";
 
     return (
         <Hint label={label} side="left" asChild>

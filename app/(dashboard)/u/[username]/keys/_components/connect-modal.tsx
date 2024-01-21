@@ -36,13 +36,13 @@ export const ConnectModal = () => {
         <Dialog>
             <DialogTrigger asChild>
                 <Button variant="primary">
-                    Generate connection
+                    接続を生成する
                 </Button>
             </DialogTrigger>
             <DialogContent>
                 <DialogHeader>
                     <DialogTitle>
-                        Generate connection
+                     接続を生成する
                     </DialogTitle>
                 </DialogHeader>
                 <Select

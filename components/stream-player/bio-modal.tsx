@@ -33,13 +33,13 @@ export const BioModal = ({initialValue}:BioModalProps) => {
         <Dialog>
             <DialogTrigger asChild>
                 <Button variant="link" size="sm" className="ml-auto">
-                    Edit
+                    編集    
                 </Button>
             </DialogTrigger>
             <DialogContent>
                 <DialogHeader>
                     <DialogTitle>
-                        Edit your bio
+                        バイオを編集する
                     </DialogTitle>
                 </DialogHeader>
                 <form onSubmit={onSubmit} className="space-y-4">
@@ -47,11 +47,11 @@ export const BioModal = ({initialValue}:BioModalProps) => {
                     <div className="flex justify-between">
                         <DialogClose ref={closeRef} asChild>
                             <Button type="button" variant="ghost">
-                                Cancel
+                                キャンセル
                             </Button>
                         </DialogClose>
                         <Button disabled={false} type="submit" variant="primary">
-                            Save
+                            保存
                         </Button>
                     </div>
                 </form>

@@ -13,16 +13,16 @@ export const Logo = () => {
         <Link href="/">
             <div className="flex items-center gap-x-4 hover:opacity-75 transition ">
                 <div className="bg-white rounded-full p-1 gap-x-1 mr-12 shrink-0 lg:mr-0 lg:shrink">
-                    <Image src="/spooky.svg" alt="Gaminghub" height="32" width="32"/>
+                    <Image src="/kanji-character-svgrepo-com.svg" alt="Gaminghub" height="32" width="32"/>
                 </div>
                 <div 
                     className={cn
                     (font.className, "hidden lg:block")}>
                     <p className="text-lg font-semibold">
-                        ET-E9 HUB
+                        日本語ストリーム
                     </p>
                     <p className="text-xs text-muted-foreground">
-                        Let&apos;s play
+                        日本語を勉強しましょう！
                     </p>
                 </div>
             </div>

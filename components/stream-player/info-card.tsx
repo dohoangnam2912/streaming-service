@@ -27,10 +27,10 @@ export const InfoCard = ({name,thumbnailUrl,hostIdentity,viewerIdentity,}: InfoC
                     </div>
                     <div>
                         <h2 className="text-sm lg:text-lg font-semibold capitalize">
-                            Edit your stream info
+                            ストリーム情報を編集する
                         </h2>
                         <p className="text-muted-foreground text-xs lg:text-sm">
-                            Maximize your visibility
+                            可視性を最大限にする 
                         </p>
                     </div>
 
@@ -41,7 +41,7 @@ export const InfoCard = ({name,thumbnailUrl,hostIdentity,viewerIdentity,}: InfoC
                 <div className="p-4 lg:p-6 space-y-4">
                     <div>
                         <h3 className="text-sm text-muted-foreground mb-2">
-                            Thumbnail
+                        サムネイル
                         </h3>
                         {thumbnailUrl && (
                             <div className="relative aspect-video rounded-md overflow-hidden w-[200px] border-white/10">

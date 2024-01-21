@@ -56,25 +56,25 @@ export const InfoModal = ({initialName,initialThumbnailUrl}: InfoModalProps) => 
         <Dialog>
             <DialogTrigger asChild>
                 <Button variant="link" size="sm" className="ml-auto">
-                    Edit
+                    編集
                 </Button>
             </DialogTrigger>
             <DialogContent>
                 <DialogHeader>
                     <DialogTitle>
-                        Edit stream info
+                        ストリーム情報を編集する
                     </DialogTitle>
                 </DialogHeader>
                 <form onSubmit={onSubmit} className="space-y-14">
                     <div className="space-y-2">
                         <Label>
-                            Name
+                            名前
                         </Label>
                         <Input disabled={isPending} placeholder="Stream name" onChange={onChange} value={name}/>
                     </div>
                     <div className="space-y-2">
                         <Label>
-                            Thumbnail
+                        サムネイル
                         </Label>
                         {thumbnailUrl ? (
                             <div className="relative aspect-video rounded-xl overflow-hidden border border-white/10">
@@ -109,11 +109,11 @@ export const InfoModal = ({initialName,initialThumbnailUrl}: InfoModalProps) => 
                     <div className="flex justify-between">
                         <DialogClose ref={closeRef} asChild>
                             <Button type="button" variant="ghost">
-                                Cancel
+                                キャンセル
                             </Button>
                         </DialogClose>
                         <Button disabled={isPending} type="submit" variant="primary">
-                            Save
+                            保存
                         </Button>
                     </div>
                 </form>

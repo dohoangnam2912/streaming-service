@@ -56,7 +56,7 @@ export function DataTable<TData, TValue>({
   return (
     <div>
         <div className="flex items-center py-4">
-            <Input placeholder="Filter users..." 
+            <Input placeholder="ユーザーをフィルター..." 
                 value={(table.getColumn("username")?.getFilterValue() as string) ?? ""} 
                 onChange={(event) => table.getColumn("username")?.setFilterValue(event.target.value)}
                 className="max-w-sm"/>
@@ -112,7 +112,7 @@ export function DataTable<TData, TValue>({
           onClick={() => table.previousPage()}
           disabled={!table.getCanPreviousPage()}
         >
-          Previous
+          前へ
         </Button>
         <Button
           variant="outline"
@@ -120,7 +120,7 @@ export function DataTable<TData, TValue>({
           onClick={() => table.nextPage()}
           disabled={!table.getCanNextPage()}
         >
-          Next
+          次へ
         </Button>
       </div>
     </div>
